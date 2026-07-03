@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRIJAL ENTERPRISES API</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 { color: #0B4F8C; }
+        .endpoint {
+            background: #f9f9f9;
+            padding: 15px;
+            margin: 15px 0;
+            border-left: 4px solid #0B4F8C;
+        }
+        .method {
+            display: inline-block;
+            padding: 5px 10px;
+            margin-right: 10px;
+            border-radius: 3px;
+            font-weight: bold;
+            color: white;
+        }
+        .get { background: #61affe; }
+        .post { background: #49cc90; }
+        .put { background: #fca130; }
+        .delete { background: #f93e3e; }
+        code {
+            background: #e8e8e8;
+            padding: 2px 6px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔧 TRIJAL ENTERPRISES API</h1>
+        <p>Welcome to the TRIJAL ENTERPRISES backend API. This API powers the drilling services management system.</p>
+        
+        <h2>Available Endpoints</h2>
+        
+        <div class="endpoint">
+            <span class="method post">POST</span>
+            <code>/api/contact</code>
+            <p>Submit a contact form inquiry</p>
+        </div>
+        
+        <div class="endpoint">
+            <span class="method get">GET</span>
+            <code>/api/projects</code>
+            <p>Get all projects</p>
+        </div>
+        
+        <div class="endpoint">
+            <span class="method get">GET</span>
+            <code>/api/projects/{id}</code>
+            <p>Get a specific project</p>
+        </div>
+        
+        <div class="endpoint">
+            <span class="method post">POST</span>
+            <code>/api/projects</code>
+            <p>Create a new project</p>
+        </div>
+        
+        <div class="endpoint">
+            <span class="method put">PUT</span>
+            <code>/api/projects/{id}</code>
+            <p>Update a project</p>
+        </div>
+        
+        <div class="endpoint">
+            <span class="method delete">DELETE</span>
+            <code>/api/projects/{id}</code>
+            <p>Delete a project</p>
+        </div>
+        
+        <div class="endpoint">
+            <span class="method post">POST</span>
+            <code>/api/quotes</code>
+            <p>Create a quote request</p>
+        </div>
+        
+        <div class="endpoint">
+            <span class="method get">GET</span>
+            <code>/api/quotes/{id}</code>
+            <p>Get quote details</p>
+        </div>
+        
+        <hr>
+        <p><strong>Note:</strong> All endpoints expect JSON data. Ensure proper CORS headers are set for cross-origin requests.</p>
+    </div>
+</body>
+</html>
