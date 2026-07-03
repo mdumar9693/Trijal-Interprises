@@ -1,0 +1,18 @@
+# Enable mod_rewrite
+RewriteEngine On
+RewriteBase /backend/
+
+# Remove .php extension from URLs
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?request=$1 [QSA,L]
+
+# Security headers
+<FilesMatch "\\.php$">
+    Deny from all
+</FilesMatch>
+
+# Allow only specific directories
+<Directory /public>
+    Allow from all
+</Directory>
