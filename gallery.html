@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project Gallery - TRIJAL ENTERPRISES">
+    <title>Project Gallery - TRIJAL ENTERPRISES</title>
+    <style>
+        html, body {
+            background-color: #F8F9FA !important;
+            margin: 0;
+            padding: 0;
+            opacity: 1;
+            visibility: visible;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+<body>
+    <!-- Scroll Progress Bar -->
+    <div id="scrollProgress" class="scroll-progress"></div>
+
+    <!-- Sticky Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <i class="fas fa-drill"></i>
+                <span>TRIJAL</span>
+            </div>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="navbar-menu" id="navbarMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="equipment.html" class="nav-link">Equipment</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="cta-button navbar-cta" onclick="window.location.href='contact.html'">Get Quote</button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header" style="background: linear-gradient(135deg, #0B4F8C 0%, #0a3d6f 100%); padding: 120px 0 60px; color: white; margin-top: 60px;">
+        <div class="container">
+            <h1 data-aos="fade-up" style="font-size: 48px; margin-bottom: 10px;">Project Gallery</h1>
+            <p data-aos="fade-up" data-aos-delay="100" style="font-size: 18px; opacity: 0.9;">Showcase of our successful drilling projects</p>
+        </div>
+    </section>
+
+    <!-- Gallery Content -->
+    <section class="gallery" style="padding: 100px 0; background: white;">
+        <div class="container">
+            <div class="gallery-filters" data-aos="fade-up">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="borewell">Borewell</button>
+                <button class="filter-btn" data-filter="mining">Mining</button>
+                <button class="filter-btn" data-filter="rock">Rock</button>
+                <button class="filter-btn" data-filter="dth">DTH</button>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="borewell" data-aos="fade-up">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1581092162562-40038f56c239?w=400&h=300&fit=crop" alt="Borewell Project">
+                        <div class="gallery-overlay">
+                            <a href="https://images.unsplash.com/photo-1581092162562-40038f56c239?w=800&h=600&fit=crop" class="lightbox-btn" data-lightbox="gallery">
+                                <i class="fas fa-search-plus"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Borewell Project - Jharkhand</h3>
+                        <p>500m deep borewell for agricultural use</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="mining" data-aos="fade-up">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1581092916550-e323be2ae537?w=400&h=300&fit=crop" alt="Mining Project">
+                        <div class="gallery-overlay">
+                            <a href="https://images.unsplash.com/photo-1581092916550-e323be2ae537?w=800&h=600&fit=crop" class="lightbox-btn" data-lightbox="gallery">
+                                <i class="fas fa-search-plus"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Mining Drilling - Bihar</h3>
+                        <p>Large-scale mineral extraction project</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="rock" data-aos="fade-up">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1581092162562-40038f56c239?w=400&h=300&fit=crop" alt="Rock Project">
+                        <div class="gallery-overlay">
+                            <a href="https://images.unsplash.com/photo-1581092162562-40038f56c239?w=800&h=600&fit=crop" class="lightbox-btn" data-lightbox="gallery">
+                                <i class="fas fa-search-plus"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Rock Drilling - West Bengal</h3>
+                        <p>Foundation drilling for commercial complex</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="dth" data-aos="fade-up">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1581092916550-e323be2ae537?w=400&h=300&fit=crop" alt="DTH Project">
+                        <div class="gallery-overlay">
+                            <a href="https://images.unsplash.com/photo-1581092916550-e323be2ae537?w=800&h=600&fit=crop" class="lightbox-btn" data-lightbox="gallery">
+                                <i class="fas fa-search-plus"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>DTH Drilling - Jharkhand</h3>
+                        <p>Precision drilling for industrial application</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="borewell" data-aos="fade-up">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1581092162562-40038f56c239?w=400&h=300&fit=crop" alt="Borewell Project 2">
+                        <div class="gallery-overlay">
+                            <a href="https://images.unsplash.com/photo-1581092162562-40038f56c239?w=800&h=600&fit=crop" class="lightbox-btn" data-lightbox="gallery">
+                                <i class="fas fa-search-plus"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Residential Borewell - Bihar</h3>
+                        <p>Water supply project for residential complex</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="mining" data-aos="fade-up">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1581092916550-e323be2ae537?w=400&h=300&fit=crop" alt="Mining Project 2">
+                        <div class="gallery-overlay">
+                            <a href="https://images.unsplash.com/photo-1581092916550-e323be2ae537?w=800&h=600&fit=crop" class="lightbox-btn" data-lightbox="gallery">
+                                <i class="fas fa-search-plus"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Mining Exploration - West Bengal</h3>
+                        <p>Exploration drilling for resource assessment</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="rock" data-aos="fade-up">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1581092162562-40038f56c239?w=400&h=300&fit=crop" alt="Rock Project 2">
+                        <div class="gallery-overlay">
+                            <a href="https://images.unsplash.com/photo-1581092162562-40038f56c239?w=800&h=600&fit=crop" class="lightbox-btn" data-lightbox="gallery">
+                                <i class="fas fa-search-plus"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Tunnel Boring - Jharkhand</h3>
+                        <p>Highway tunnel construction project</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="dth" data-aos="fade-up">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1581092916550-e323be2ae537?w=400&h=300&fit=crop" alt="DTH Project 2">
+                        <div class="gallery-overlay">
+                            <a href="https://images.unsplash.com/photo-1581092916550-e323be2ae537?w=800&h=600&fit=crop" class="lightbox-btn" data-lightbox="gallery">
+                                <i class="fas fa-search-plus"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Industrial DTH - Bihar</h3>
+                        <p>Deep drilling for industrial foundation</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>TRIJAL ENTERPRISES</h3>
+                    <p>Leading drilling contractor providing premium solutions for borewell, mining, rock, and DTH drilling.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Borewell Drilling</a></li>
+                        <li><a href="services.html">Mining Drilling</a></li>
+                        <li><a href="services.html">Rock Drilling</a></li>
+                        <li><a href="services.html">DTH Drilling</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-phone"></i> +91 98019 87890</p>
+                    <p><i class="fas fa-envelope"></i> trijalenterprises@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Telgariah More, Dhanbad Road, Chas, Bokaro, Jharkhand 827013</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 TRIJAL ENTERPRISES. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
